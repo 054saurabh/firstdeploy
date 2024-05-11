@@ -1,0 +1,7 @@
+python
+sklearn
+flask
+librosa
+numpy
+pickle
+os

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laryngeal cancer</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_bar">
+            <ul id="ul_nav">
+                <li id="li1"><a class="re" href="#">Home</a></li>
+                <li id="li1"><a class="re" href="#">About</a></li>
+                <li id="li1"><a class="re" href="#">Contact</a></li>
+                <li id="li1"><a class="re" href="#">Document</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <div class="file">
+                <form id="form1" action="/voice_file" method="post" enctype="multipart/form-data">
+                    <span>Upload audio file</span>
+                    <div class="file_upload">
+                        <input type="file" name="file1">
+                    </div>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="result">
+            {% if predic == 0 %}
+                <h1>{{predict}}defected</h1>
+            {% elif predic == 1 %}
+                <h1>{{predict}}Not defected</h1>
+            {% else %}
+                <h1>Upload File</h1>
+            {% endif %}
+        </div>
+        <div id="proba">{{prob}}</div>
+    </div>
+</body>
+</html>

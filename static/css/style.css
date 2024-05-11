@@ -1,0 +1,102 @@
+body{
+    background-image: url('../pic/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 33%;
+}
+span{
+    font-size: 36px;
+    color: rgb(0, 106, 255);
+}
+#form1{
+    position: relative;
+    height: 80px;
+    width: 400px;
+
+}
+#form1 .file_upload input{
+    height: 40px;
+    font-size: 21px;
+    position: relative;
+    left: -22px;
+}
+#form1 .file_upload{
+    margin: 40px;
+}
+#form1 button{
+    height: 48px;
+    width: 110px;
+    position: relative;
+    left: 80px;
+    color: blue;
+    background-color: chartreuse;
+    border-radius: 6px;
+    border-color: azure;
+    font-size: 25px;
+
+}
+
+#form1 button:hover{
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+
+.box{
+    background-color: rgba(217, 214, 24, 0.892);
+    height: 340px;
+    width: 450px;
+    border-radius: 6px;
+    position: relative;
+    top: -10px;
+    left: -160px;
+    box-shadow: 3px 2px 12px 1px;
+    
+}
+.file{
+    position: relative;
+    left: 100px;
+    top: 16px;    
+}
+.nav_bar{
+    background-color: chartreuse;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    border-radius: 2px;
+    position: absolute;
+    top: 2px;
+    left: 1.2px;
+    width: 1533px;
+}
+#ul_nav{
+    display: flex;
+}
+#li1{
+    position: relative;
+    left: 30px;
+    list-style-type: none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.re{
+    text-decoration: none;
+}
+#result{
+    position: relative;
+    top: -130px;
+    left: 2px;
+    color: rgb(0, 0, 0);
+}
+#proba{
+    font-size: 34px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -140px;
+    left: 35px;
+}
